@@ -119,3 +119,5 @@ let years = [2017,2018,2019,2020];
 for (let i = 0; i < years.length; i++) {
     console.log("At element "+i + " we have the element: "+years[i]);
 }
+
+console.log("Use Bro Code to learn more about JS!");
