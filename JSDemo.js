@@ -1,6 +1,18 @@
 // Print statement in Javascript that print out Hello World to the console
 // My first Javascript file!!!
 console.log("Hello World");
+console.log("I like pizza!");
+
+// Let's create an alert box into our html page! The use
+// will have to click ok on the alert box before seeing the
+// their page
+
+//window.alert("This is an alert");
+
+// Code below retrieves the html element with id ="myH1" and
+// overrides it's text to "Hello"
+document.getElementById("myH1").textContent = "Hello";
+document.getElementById("myP").textContent = "I like pizza";
 
 /***
  * Test a few lines of code first, and see if it works before moving to another piece of code.
