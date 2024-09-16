@@ -50,9 +50,27 @@ let isStudent = false;
 
 // Code below overrides all p1, p2, and p3 id's of elements from
 // linked html file with text content on RHS side of varaibles
-document.getElementById("p1").textContent = `Your name is ${fullName}`;
-document.getElementById("p2").textContent = `Your age is ${age}`;
-document.getElementById("p3").textContent = `Enrolled: ${isStudent}`;
+
+//
+try {
+ document.getElementById("p1").textContent = `Your name is ${fullName}`;
+} catch(ReferenceError) {
+    //console.log("");
+
+}
+try {
+    document.getElementById("p2").textContent = `Your age is ${age}`;
+   } catch(ReferenceError) {
+       //console.log("");
+   }
+try {
+    document.getElementById("p3").textContent = `Enrolled: ${isStudent}`;
+} catch(ReferenceError) {
+    //console.log(""); 
+}
+ //document.getElementById("p2").textContent = `Your age is ${age}`;
+ //document.getElementById("p3").textContent = `Enrolled: ${isStudent}`;
+
 
 
 
