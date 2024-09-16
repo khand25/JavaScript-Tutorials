@@ -71,6 +71,44 @@ try {
  //document.getElementById("p2").textContent = `Your age is ${age}`;
  //document.getElementById("p3").textContent = `Enrolled: ${isStudent}`;
 
+ /***
+  * Bro Code video 2.
+  */
+// arithemtic operators = operands (values, variables, etc.)
+// operators (+ - * / %)
+
+// declared a varaible called students and assinged it the numerical
+// value of 30
+let students = 30;
+
+//students = students +1;
+
+// exponents in JS used by '**'
+//students = students **2;
+
+// mode operator in JS.
+//students = students % 2;
+
+// Examples of augmented assignment operators
+
+//students +=1;
+//students -= 1;
+//students *= 2;
+//students /= 2;
+students **=2;
+
+//Increment and decrement operator like Java below in JS
+students++;
+students--;
+console.log(students);
+
+/***
+ *  Operator precendence or order of operations
+ *      1. parenthesis()
+ *      2. exponents
+ *      3. multiplication & division & modulo
+ *      4. addition & subtraction
+ */
 
 
 
