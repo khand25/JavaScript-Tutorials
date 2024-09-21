@@ -180,7 +180,7 @@ let {name,gender, ...color} = dog;
 console.log(color);
 
 // For loops used to extract the 'KEYS' from objects.
-// Note thatt is a key and not the acutal value. If we want to display the associated value
+// Note that is a key and not the acutal value. If we want to display the associated value
 // of the key's, use the syntax of object[element]
 for (let element in animal) {
     console.log(animal[element]);
