@@ -115,5 +115,37 @@ numbers.forEach(display);
  * creating a new result array different from the original array.
  */
 
+// .map() = accepts a callback and applies that function to each
+// element of any array, then returns a new array
 
+function square(element) {
+    return Math.pow(element,2);
+}
+
+let squares = numbers.map(square);
+// Notice how numbers array is unchanged but rather sqaures
+// arrays contains the result of the map function
+console.log(numbers);
+console.log(squares);
+
+// .filter() = creates a new array by filtering out elements
+// only adds news element to a new array if it passes the predicate.
+// the predicate function must return true to the given input
+// element parameter for it to be added as a new element towards
+// the end of the newly returned array
+
+numbers = [1,2,3,4,5];
+
+//filtering function used to check wheter an number is even or not
+const isEven = (element) => {
+    if (element % 2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+let newArray = numbers.filter(isEven);
+console.log(numbers);
+console.log(newArray);
 
