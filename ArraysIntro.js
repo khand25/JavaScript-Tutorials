@@ -129,7 +129,7 @@ console.log(numbers);
 console.log(squares);
 
 // .filter() = creates a new array by filtering out elements
-// only adds news element to a new array if it passes the predicate.
+// only adds new element to a new array if it passes the predicate.
 // the predicate function must return true to the given input
 // element parameter for it to be added as a new element towards
 // the end of the newly returned array
