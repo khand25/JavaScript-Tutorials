@@ -68,5 +68,26 @@ tagBtn.addEventListener('click', () => {
     grabbedElement[2].innerHTML = 'Modified Sublime Text!'; */
 });
 
+// We can accomplish the same things as get element by ids
+// using query select. Query select will only grab the first associated
+// element from the parameter.
+
+let element = document.querySelector('p');
+// prints out the first parahgraph elements and its content
+// using devloper tools
+console.log(element);
+
+// grab all of the elements in the connected html file that
+//are part of the class of master2 and sotre it in an array like
+// strucutre where element will reference it in memory
+element = document.querySelectorAll(".master2");
+console.log(element[1]);
+
+// grab the element from the html file with the id of getTagName
+// using querySelector
+element = document.querySelector("#getTagName");
+console.log(element);
+
+
 
 
