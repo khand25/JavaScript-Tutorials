@@ -88,6 +88,13 @@ console.log(element[1]);
 element = document.querySelector("#getTagName");
 console.log(element);
 
-
+/**
+* NOTE:
+* Document, Nav, Div, and Section elements, we can use functions
+* such getElementByID, getClassNameBy, getTagNameBy, querySelect
+* querySelectAll(). 
+* Other hhml elements are not capapble of containing other elements
+* within them so we cannot use these functions on them.
+ */
 
 
