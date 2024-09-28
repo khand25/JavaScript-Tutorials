@@ -48,7 +48,25 @@ const welcomeMsg = document.getElementById("welcome-msg");
     master[2].innerHTML = 'I need a job!';
  });
 
+ 
+// Let's grab a list of all paragraph elements!
 
+const tagBtn = document.getElementById("getTagNameBTN");
+
+tagBtn.addEventListener('click', () => {
+   // Grab all elements from the entire html document that
+   // are paragraph elements and store it in an array.
+   const listP = document.getElementsByTagName('p');
+   // grab the 5th paragraph element and change its text to
+   // Modified Sublime Text
+   listP[4].innerHTML = 'Modified Sublime Text!';
+   // code below does the same thing but rather uses
+   // the unqiue div tag id to change it's child elements.
+
+   /*const divTag = document.getElementById('getTagName');
+    let grabbedElement= divTag.getElementsByTagName('p');
+    grabbedElement[2].innerHTML = 'Modified Sublime Text!'; */
+});
 
 
 
