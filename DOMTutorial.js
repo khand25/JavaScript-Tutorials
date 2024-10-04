@@ -93,8 +93,12 @@ console.log(element);
 * Document, Nav, Div, and Section elements, we can use functions
 * such getElementByID, getClassNameBy, getTagNameBy, querySelect
 * querySelectAll(). 
-* Other hhml elements are not capapble of containing other elements
+* Other hhml elements are not capable of containing other elements
 * within them so we cannot use these functions on them.
  */
 
+let newElement = document.createElement('p');
+newElement.innerHTML = 'This is a test to see if branches in Github work as I expect them to!!';
+let parentDiv = document.querySelector('#getTagName');
+parentDiv.append(newElement);
 
