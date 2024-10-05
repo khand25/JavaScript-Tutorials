@@ -66,3 +66,17 @@ walkDog().then((value) => {
     console.log('You finished all the tasks');
 }
 ).catch((error) => console.log(error));
+
+/**
+ * The function passed into the Pormise consturcotr 
+ * (any function that contains the two parameter values of resolve and reject)
+ * called the executor. When the new Promise object is created, the executor
+ * runs automatiaclly. It should contain producing code which
+ * should evnetually produce the result. Its arugments
+ * resolve and reject, are callbacks.
+ * When the executor function obtains it's result, based on the result
+ * or returned value of the excutor, we can call the resolve and reject
+ * functions. resolve('value') - if the job is finished sucessfully, with the ideal result wamted from the executor.
+ * reject('value') - if the job is finished unsucessfully with not the ideal return result we wanted.
+ * (An error has occurred)
+ */
