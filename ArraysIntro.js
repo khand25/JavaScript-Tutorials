@@ -91,7 +91,8 @@ numbers.forEach(double);
 //numbers.forEach(display);
 
 // array parameter refers to current array calling object!
-// index refers to the current index of the ith element
+// index refers to the current index of the ith element.
+// element refers to the current array element
 function double(element,index,array) {
     array[index] = element * 2;
 }
