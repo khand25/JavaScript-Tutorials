@@ -40,14 +40,14 @@ function getSuperHeroes() {
                 // pass in super heroes array when the promise if fullfilled
                 resolve(superHeroesArray);
             } else {
-                reject(new Error("The world is currently unsafe. No superheores"))
+                reject(new Error("The world is currently unsafe. No superheros!!!"));
             }
         }, 2500);
     });
 }
 
 // call the getSuperHeroes to see if the promise object state is fullfied or not.
-// then and catch function take in any 1 parmeter function that will be exectued when the .then or catch is evaluted only
+// then and catch function can take in any 1 parameter function that will be exectued when the .then or catch is evaluted only
 // if circumstances ask for it.
 // .then will only be called when the promise object returned from getSuperHeroes function is resolved
 // otherwise .catch function will be called when the state of the promise object is rejected.
@@ -75,7 +75,7 @@ getSuperHeroes().then((message) => {
     }
 
    // call the map function now that will create a newArrayWithRank array that will include the all the same elements from the
-   // orginal array, with an additional rank property added if the .power attribute is condition is met.
+   // orginal array, with an additional rank property added if the .power attribute condition is met.
    let newArrayWithRank = superHeroesArray.map((element,index) => {
     if (element.power > 90) {
         element.rank = "Top Tier";
@@ -93,7 +93,7 @@ getSuperHeroes().then((message) => {
    // that each of their elements objects universe property will be 'Marvel'
    let marvelSuperHeroes = newArrayWithRank.filter((element) => {
     if(element.universe == "Marvel") {
-        return element;
+        return true;
     }
    });
 
@@ -108,7 +108,7 @@ getSuperHeroes().then((message) => {
     function descendingOrder(elementA,elementB) {
         return elementB.power - elementA.power;
     }
-    // sort function arrays will iterate through calling array elements and pass into 2 adject array elements, from the calling array,
+    // sort function arrays will iterate through calling array elements and pass into 2 adjenct array elements, from the calling array,
     // on each iteration for comparing.
     marvelSuperHeroes.sort(descendingOrder);
     console.log("\nPrinting out the sorted list of Marvel superheroes!\n");
