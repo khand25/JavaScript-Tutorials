@@ -1,0 +1,32 @@
+// Logical AND (&&) and Logical OR (||)
+
+// create two variables a and b boolean variables
+let a = true;
+let b = false;
+
+function getName(name) {
+    return name;
+}
+
+//returns true as both a and b evalute to true
+console.log(a && getName('Danyal Khan'));
+
+// if atleast one is true than the entire thing is true
+// for or operations
+console.log(a||b);
+
+/**
+ * Template literals (f Strings in JS)
+ */
+
+let name1 = "John";
+let name2 = "Doe";
+
+console.log(name1 + " "+ name2);
+
+// Another way to accompshe same String as above
+console.log(`${name1} ${name2}`);
+
+
+
+
