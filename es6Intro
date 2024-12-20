@@ -27,6 +27,37 @@ console.log(name1 + " "+ name2);
 // Another way to accompshe same String as above
 console.log(`${name1} ${name2}`);
 
+/**
+ * Ternary operator to use as if statements in  
+ * react code
+ */
+
+let showRecipeOne = false;
+
+function getRecipeOneName(recipeName) {
+    return recipeName;
+}
+
+function getRecipeTwoName(recipeName) {
+    return recipeName;
+
+}
+
+if(showRecipeOne) {
+    console.log(getRecipeOneName('Pizza'));
+} else {
+    console.log(getRecipeTwoName('Coke'));
+}
+
+// Use ternary operator instead of if/else statment
+
+// General format
+// condition ? statement1: statement2;
 
 
+// same if/else statement above translated to ternary operator
+showRecipeOne ? console.log(getRecipeOneName('Pizza')) : console.log(getRecipeTwoName('Coke'));
 
+/**
+ * Object and array destructuring
+ */
