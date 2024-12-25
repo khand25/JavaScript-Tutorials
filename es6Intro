@@ -61,3 +61,34 @@ showRecipeOne ? console.log(getRecipeOneName('Pizza')) : console.log(getRecipeTw
 /**
  * Object and array destructuring
  */
+
+ const id = 1;
+ const productName = "Product Apple Watch";
+ const rating = 5;
+
+ const product = {
+    id: id,
+    productName: productName,
+    rating: rating
+ };
+
+ console.log(product);
+ // an object called product2 created below that has some
+ // instance variables (already intiliazed) and
+ // referencing a unique memory address
+ const product2 = {
+    description: "Product 2 description",
+    id,
+    productName,
+    rating
+ };
+
+// acess the product2 description instance vairalbe
+// and assin g its value to getProductTwoDescription
+ const getProductTwoDescription = product2.description;
+
+ console.log(getProductTwoDescription);
+
+ const {description} = product2;
+
+ console.log(description)
