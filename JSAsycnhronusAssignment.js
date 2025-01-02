@@ -54,7 +54,7 @@ function getSuperHeroes() {
 
 // We want to manipulate the intial superHeroes array more if the promise is fullfilled otherwise
 // throw the error message.
-// message refers to input arugment passed into the Promise resolve nad reject methods 
+// message refers to input arugment passed into the Promise resolve and reject methods 
 getSuperHeroes().then((message) => {
     // applying to the superHeroesArray inplace, use the for each function to iterate through the superHeroesArray elements
     // and each element (a super hero object) it's universe property will be checked to see if it is DC or Marvel and add the
